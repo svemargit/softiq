@@ -1,0 +1,46 @@
+// Import Bootstrap SCSS
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Import other styles
+//@import "about.css";
+//@import "back-to-top.css";
+//@import "breadcrumbs.css";
+//@import "clients.css";
+//@import "contact.css";
+//@import "cta.css";
+//@import "faq.css";
+//@import "footer.css";
+@import "header.css";
+@import "hero.css";
+@import "navbar.css";
+//@import "portfolio.css";
+//@import "preloader.css";
+//@import "pricing.css";
+//@import "section.css";
+//@import "services.css";
+//@import "skills.css";
+//@import "team.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #47b2e4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73c5eb;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
