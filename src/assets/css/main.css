@@ -4,6 +4,7 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "animations.css";
 @import "sections/about.css";
 @import "sections/back-to-top.css";
 @import "sections/breadcrumbs.css";
@@ -11900,6 +11901,10 @@ h5,
 h6,
 .h6 {
   font-family: "Jost", sans-serif;
+}
+
+.primary {
+  color: var(--background-color);
 }
 
 /*# sourceMappingURL=main.css.map */

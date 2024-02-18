@@ -1,7 +1,9 @@
+@import url('root.css');
+
 #hero {
     width: 100%;
     height: 80vh;
-    background: #37517e;
+    background: linear-gradient(to bottom right, black 60%, #585657);
 }
 
 #hero .container {
@@ -33,11 +35,11 @@
     transition: 0.5s;
     margin: 10px 0 0 0;
     color: #fff;
-    background: #47b2e4;
+    background: var(--primary-color);
 }
 
 #hero .btn-get-started:hover {
-    background: #209dd8;
+    background: var(--secondary-color);
 }
 
 #hero .btn-watch-video {
@@ -62,19 +64,12 @@
     color: #47b2e4;
 }
 
-#hero .animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-
 @media (max-width: 991px) {
     #hero {
         height: 100vh;
         text-align: center;
     }
 
-    #hero .animated {
-        animation: none;
-    }
 
     #hero .hero-img {
         text-align: center;
@@ -110,15 +105,5 @@
     #hero .btn-get-started {
         font-size: 16px;
         padding: 10px 24px 11px 24px;
-    }
-}
-
-@keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(-10px);
     }
 }

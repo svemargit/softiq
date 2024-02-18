@@ -2,6 +2,7 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // Import other styles
+@import "animations.css";
 @import "sections/about.css";
 @import "sections/back-to-top.css";
 @import "sections/breadcrumbs.css";
@@ -43,4 +44,8 @@ h4,
 h5,
 h6 {
   font-family: "Jost", sans-serif;
+}
+
+.primary {
+  color: var(--background-color);
 }

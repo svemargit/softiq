@@ -1,0 +1,19 @@
+.animated-arrow {
+    color: var(--background-color);
+    font-weight: bold;
+    font-size: 24px;
+    transition: transform 2s;
+    animation: moveUpDown 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    25%, 75% {
+        transform: translateY(-15px);
+    }
+}

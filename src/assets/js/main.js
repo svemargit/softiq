@@ -65,15 +65,41 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
+    let header = select('#header');
+    let offset = header.offsetHeight;
 
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
+    let elementPos = select(el).offsetTop;
+    let startingY = window.pageYOffset;
+
+    let targetY = elementPos - offset;
+    let duration = 1500; // 5 seconds
+
+    let startTime;
+
+    const easeInOutQuad = (t, b, c, d) => {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    };
+
+    const scrollAnimation = (currentTime) => {
+      if (!startTime) {
+        startTime = currentTime;
+      }
+
+      let timeElapsed = currentTime - startTime;
+      let scrollProgress = Math.min(timeElapsed / duration, 1);
+
+      window.scrollTo(0, easeInOutQuad(scrollProgress, startingY, targetY - startingY, 1));
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(scrollAnimation);
+      }
+    };
+
+    requestAnimationFrame(scrollAnimation);
+  };
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
