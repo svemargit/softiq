@@ -282,3 +282,20 @@
   });
 
 })()
+
+const toggleOnIcons = document.querySelectorAll('.icon.toggle-on');
+const toggleOffIcons = document.querySelectorAll('.icon.toggle-off');
+
+// Function to toggle visibility of icons
+function toggleIconsVisibility() {
+  toggleOnIcons.forEach(icon => {
+    icon.classList.toggle('visible');
+  });
+
+  toggleOffIcons.forEach(icon => {
+    icon.classList.toggle('visible');
+  });
+}
+
+// Call toggleIconsVisibility function every 5 seconds
+setInterval(toggleIconsVisibility, 5000);

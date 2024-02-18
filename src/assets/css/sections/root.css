@@ -1,6 +1,8 @@
 :root {
-    --primary-color: #F4DFC8;
-    --secondary-color: #F4DFC8;
-    --tertiary-color: #6c757d;
+    /*--primary-color: #F4DFC8;*/
+
     --background-color: black;
+    --primary-color: #1B4242;
+    --secondary-color: #5C8374;
+    --tertiary-color: #9EC8B9;
 }
