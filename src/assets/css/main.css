@@ -4,9 +4,24 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "header.css";
-@import "hero.css";
-@import "navbar.css";
+@import "sections/about.css";
+@import "sections/back-to-top.css";
+@import "sections/breadcrumbs.css";
+@import "sections/clients.css";
+@import "sections/contact.css";
+@import "sections/cta.css";
+@import "sections/faq.css";
+@import "sections/footer.css";
+@import "sections/header.css";
+@import "sections/hero.css";
+@import "sections/navbar.css";
+@import "sections/portfolio.css";
+@import "sections/preloader.css";
+@import "sections/pricing.css";
+@import "sections/section.css";
+@import "sections/services.css";
+@import "sections/skills.css";
+@import "sections/team.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;

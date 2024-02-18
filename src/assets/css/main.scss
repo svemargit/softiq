@@ -2,24 +2,24 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // Import other styles
-//@import "about.css";
-//@import "back-to-top.css";
-//@import "breadcrumbs.css";
-//@import "clients.css";
-//@import "contact.css";
-//@import "cta.css";
-//@import "faq.css";
-//@import "footer.css";
-@import "header.css";
-@import "hero.css";
-@import "navbar.css";
-//@import "portfolio.css";
-//@import "preloader.css";
-//@import "pricing.css";
-//@import "section.css";
-//@import "services.css";
-//@import "skills.css";
-//@import "team.css";
+@import "sections/about.css";
+@import "sections/back-to-top.css";
+@import "sections/breadcrumbs.css";
+@import "sections/clients.css";
+@import "sections/contact.css";
+@import "sections/cta.css";
+@import "sections/faq.css";
+@import "sections/footer.css";
+@import "sections/header.css";
+@import "sections/hero.css";
+@import "sections/navbar.css";
+@import "sections/portfolio.css";
+@import "sections/preloader.css";
+@import "sections/pricing.css";
+@import "sections/section.css";
+@import "sections/services.css";
+@import "sections/skills.css";
+@import "sections/team.css";
 
 body {
   font-family: "Open Sans", sans-serif;
