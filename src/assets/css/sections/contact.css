@@ -1,6 +1,6 @@
 .contact .info {
-    border-top: 3px solid #47b2e4;
-    border-bottom: 3px solid #47b2e4;
+    border-top: 3px solid var(--tertiary-color);
+    border-bottom: 3px solid var(--tertiary-color);
     padding: 30px;
     background: #fff;
     width: 100%;
@@ -9,7 +9,7 @@
 
 .contact .info i {
     font-size: 20px;
-    color: #47b2e4;
+    color: var(--tertiary-color);
     float: left;
     width: 44px;
     height: 44px;
@@ -60,21 +60,21 @@
 }
 
 .contact .info .social-links a:hover {
-    background: #47b2e4;
+    background: var(--tertiary-color);
     color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-    background: #47b2e4;
+    background: var(--tertiary-color);
     color: #fff;
 }
 
 .contact .php-email-form {
     width: 100%;
-    border-top: 3px solid #47b2e4;
-    border-bottom: 3px solid #47b2e4;
+    border-top: 3px solid var(--tertiary-color);
+    border-bottom: 3px solid var(--tertiary-color);
     padding: 30px;
     background: #fff;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -151,7 +151,7 @@
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-    border-color: #47b2e4;
+    border-color: var(--tertiary-color);
 }
 
 .contact .php-email-form input {
@@ -163,7 +163,7 @@
 }
 
 .contact .php-email-form button[type=submit] {
-    background: #47b2e4;
+    background: var(--tertiary-color);
     border: 0;
     padding: 12px 34px;
     color: #fff;

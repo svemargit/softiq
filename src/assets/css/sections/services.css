@@ -25,7 +25,7 @@
 
 
 .services .icon-box .icon i {
-    color: #47b2e4;
+    color: var(--tertiary-color);
     font-size: 36px;
     position: absolute;
     top: -15px;
@@ -81,5 +81,5 @@
 }
 
 .services .icon-box:hover h4 a {
-    color: #47b2e4;
+    color: var(--tertiary-color);
 }

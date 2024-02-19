@@ -29,8 +29,8 @@
 }
 
 .cta .cta-btn:hover {
-    background: #47b2e4;
-    border: 2px solid #47b2e4;
+    background: var(--tertiary-color);
+    border: 2px solid var(--tertiary-color);
 }
 
 @media (max-width: 1024px) {

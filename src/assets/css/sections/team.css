@@ -82,7 +82,7 @@
 }
 
 .team .member .social a:hover {
-    background: #47b2e4;
+    background: var(--tertiary-color);
 }
 
 .team .member .social a:hover i {

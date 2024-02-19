@@ -60,7 +60,7 @@
 }
 
 #hero .btn-watch-video:hover i {
-    color: #47b2e4;
+    color: var(--tertiary-color);
 }
 
 @media (max-width: 991px) {

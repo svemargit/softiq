@@ -17,7 +17,7 @@
 .skills .content ul i {
     font-size: 20px;
     padding-right: 4px;
-    color: #47b2e4;
+    color: var(--tertiary-color);
 }
 
 .skills .content p:last-child {

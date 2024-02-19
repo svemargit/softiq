@@ -19,7 +19,7 @@
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #47b2e4;
+    background: var(--tertiary-color);
     color: #fff;
 }
 
@@ -75,7 +75,7 @@
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .cross-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-    color: #47b2e4;
+    color: var(--tertiary-color);
 }
 .portfolio .portfolio-item .portfolio-info .preview-link {
     right: 70px;
@@ -114,11 +114,11 @@
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #47b2e4;
+    border: 1px solid var(--tertiary-color);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #47b2e4;
+    background-color: var(--tertiary-color);
 }
 
 .portfolio-details .portfolio-info {

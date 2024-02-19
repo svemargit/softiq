@@ -31,7 +31,7 @@
 }
 
 .pricing h4 span {
-    color: #47b2e4;
+    color: var(--tertiary-color);
     font-size: 18px;
     display: block;
 }
@@ -73,26 +73,26 @@
     display: inline-block;
     padding: 12px 35px;
     border-radius: 50px;
-    color: #47b2e4;
+    color: var(--tertiary-color);
     transition: none;
     font-size: 16px;
     font-weight: 500;
     font-family: "Jost", sans-serif;
     transition: 0.3s;
-    border: 1px solid #47b2e4;
+    border: 1px solid var(--tertiary-color);
 }
 
 .pricing .buy-btn:hover {
-    background: #47b2e4;
+    background: var(--tertiary-color);
     color: #fff;
 }
 
 .pricing .featured {
-    border-top-color: #47b2e4;
+    border-top-color: var(--tertiary-color);
 }
 
 .pricing .featured .buy-btn {
-    background: #47b2e4;
+    background: var(--tertiary-color);
     color: #fff;
 }
 

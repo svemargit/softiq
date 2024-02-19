@@ -39,7 +39,7 @@ section {
     display: block;
     width: 40px;
     height: 3px;
-    background: #47b2e4;
+    background: var(--tertiary-color);
     bottom: 0;
     left: calc(50% - 20px);
 }
