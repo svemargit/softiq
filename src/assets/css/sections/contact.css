@@ -26,7 +26,7 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #37517e;
+    color: var(--primary-color);
 }
 
 .contact .info p {

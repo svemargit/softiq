@@ -1,7 +1,7 @@
 .skills .content h3 {
     font-weight: 700;
     font-size: 32px;
-    color: #37517e;
+    color: var(--primary-color);
     font-family: "Poppins", sans-serif;
 }
 
@@ -38,7 +38,7 @@
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #37517e;
+    color: var(--primary-color);
 }
 
 .skills .progress .skill .val {

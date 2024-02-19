@@ -14,7 +14,7 @@
 .breadcrumbs h2 {
     font-size: 28px;
     font-weight: 600;
-    color: #37517e;
+    color: var(--primary-color);
 }
 
 .breadcrumbs ol {

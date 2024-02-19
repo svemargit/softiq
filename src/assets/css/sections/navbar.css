@@ -188,7 +188,7 @@
 .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #37517e;
+    color: var(--primary-color);
 }
 
 .navbar-mobile a:hover,
@@ -200,7 +200,7 @@
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
     margin: 15px;
-    color: #37517e;
+    color: var(--primary-color);
 }
 
 .navbar-mobile .dropdown ul {

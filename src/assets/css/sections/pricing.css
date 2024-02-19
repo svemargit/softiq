@@ -15,12 +15,12 @@
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 20px;
-    color: #37517e;
+    color: var(--primary-color);
 }
 
 .pricing h4 {
     font-size: 48px;
-    color: #37517e;
+    color: var(--primary-color);
     font-weight: 400;
     font-family: "Jost", sans-serif;
     margin-bottom: 25px;
