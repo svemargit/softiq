@@ -3,6 +3,9 @@
 
     --background-color: black;
     --primary-color: #1B4242;
+    --primary-color-opacity: rgba(27, 66, 66, 0.9);
+    --primary-color-opacity-2: rgba(27, 66, 66, 0.5);
     --secondary-color: #5C8374;
     --tertiary-color: #9EC8B9;
+    --white-color: #fff;
 }

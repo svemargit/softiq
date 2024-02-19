@@ -1,17 +1,17 @@
 .cta {
-    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../../img/cta-bg.jpg") fixed center center;
+    background: linear-gradient(var(--primary-color-opacity), var(--primary-color-opacity-2)), url("../../img/cta.jpg") fixed center center;
     background-size: cover;
     padding: 120px 0;
 }
 
 .cta h3 {
-    color: #fff;
+    color: var(--white-color);
     font-size: 28px;
     font-weight: 700;
 }
 
 .cta p {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .cta .cta-btn {
@@ -24,8 +24,8 @@
     border-radius: 50px;
     transition: 0.5s;
     margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
 }
 
 .cta .cta-btn:hover {

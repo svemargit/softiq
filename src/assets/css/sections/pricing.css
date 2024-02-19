@@ -4,11 +4,27 @@
 
 .pricing .box {
     padding: 60px 40px;
-    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
-    background: #fff;
+    box-shadow: 0 3px 8px -2px rgba(241, 241, 250, 0.84);
+    background: var(--white-color);
     height: 100%;
-    border-top: 4px solid #fff;
+    border-top: 4px solid var(--white-color);
+    border-left: 4px solid var(--white-color);
     border-radius: 5px;
+}
+
+.pricing .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--white-color);
+}
+
+.pricing p {
+    color: var(--white-color);
+
 }
 
 .pricing h3 {
@@ -84,20 +100,24 @@
 
 .pricing .buy-btn:hover {
     background: var(--tertiary-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .pricing .featured {
     border-top-color: var(--tertiary-color);
+    border-left-color: var(--tertiary-color);
+    box-shadow: 0 3px 20px -2px rgba(241, 241, 250, 0.84);
+
 }
 
 .pricing .featured .buy-btn {
     background: var(--tertiary-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .pricing .featured .buy-btn:hover {
-    background: #23a3df;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 @media (max-width: 992px) {

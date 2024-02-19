@@ -6,7 +6,7 @@
 
 #header.header-scrolled,
 #header.header-inner-pages {
-    background: rgba(40, 58, 90, 0.9);
+    background: var(--primary-color-opacity);
 }
 
 #header .logo {
@@ -20,7 +20,7 @@
 }
 
 #header .logo a {
-    color: #fff;
+    color: var(--white-color);
 }
 
 #header .logo img {

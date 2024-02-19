@@ -1,8 +1,8 @@
 .contact .info {
     border-top: 3px solid var(--tertiary-color);
-    border-bottom: 3px solid var(--tertiary-color);
+    border-left: 3px solid var(--tertiary-color);
     padding: 30px;
-    background: #fff;
+    background: var(--white-color);
     width: 100%;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
@@ -48,7 +48,7 @@
     font-size: 18px;
     display: inline-block;
     background: #333;
-    color: #fff;
+    color: var(--white-color);
     line-height: 1;
     padding: 8px 0;
     border-radius: 50%;
@@ -61,22 +61,22 @@
 
 .contact .info .social-links a:hover {
     background: var(--tertiary-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
     background: var(--tertiary-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .contact .php-email-form {
     width: 100%;
     border-top: 3px solid var(--tertiary-color);
-    border-bottom: 3px solid var(--tertiary-color);
+    border-left: 3px solid var(--tertiary-color);
     padding: 30px;
-    background: #fff;
+    background: var(--white-color);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -94,7 +94,7 @@
 
 .contact .php-email-form .error-message {
     display: none;
-    color: #fff;
+    color: var(--white-color);
     background: #ed3c0d;
     text-align: left;
     padding: 15px;
@@ -107,7 +107,7 @@
 
 .contact .php-email-form .sent-message {
     display: none;
-    color: #fff;
+    color: var(--white-color);
     background: #18d26e;
     text-align: center;
     padding: 15px;
@@ -116,7 +116,7 @@
 
 .contact .php-email-form .loading {
     display: none;
-    background: #fff;
+    background: var(--white-color);
     text-align: center;
     padding: 15px;
 }
@@ -166,7 +166,7 @@
     background: var(--tertiary-color);
     border: 0;
     padding: 12px 34px;
-    color: #fff;
+    color: var(--white-color);
     transition: 0.4s;
     border-radius: 50px;
 }
@@ -183,4 +183,8 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+.buy-btn:hover {
+        background: var(--primary-color) !important;
 }

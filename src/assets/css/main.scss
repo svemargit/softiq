@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: #73c5eb;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 

@@ -307,3 +307,17 @@ buttons.forEach(button => {
         document.getElementById('option').value = this.getAttribute('data-option');
     });
 });
+
+// Get all the divs with class 'box'
+const boxes = document.querySelectorAll('.box');
+
+// Add event listener to each box
+boxes.forEach(box => {
+    box.addEventListener('click', () => {
+        // Remove the 'featured' class from all boxes
+        boxes.forEach(box => box.classList.remove('featured'));
+
+        // Add the 'featured' class to the clicked box
+        box.classList.add('featured');
+    });
+});

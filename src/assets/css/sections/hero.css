@@ -15,7 +15,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 #hero h2 {
@@ -47,13 +47,13 @@
     align-items: center;
     transition: 0.5s;
     margin: 10px 0 0 25px;
-    color: #fff;
+    color: var(--white-color);
     line-height: 1;
 }
 
 #hero .btn-watch-video i {
     line-height: 0;
-    color: #fff;
+    color: var(--white-color);
     font-size: 32px;
     transition: 0.3s;
     margin-right: 8px;

@@ -226,7 +226,7 @@
 }
 
 .swiper-lazy-preloader-white {
-  --swiper-preloader-color: #fff;
+  --swiper-preloader-color: var(--white-color);
 }
 
 .swiper-lazy-preloader-black {
