@@ -17,6 +17,7 @@
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: black;
 }
 
 #header .logo a {
@@ -25,4 +26,8 @@
 
 #header .logo img {
     max-height: 40px;
+}
+
+#header .header-dark {
+    color: var(--primary-color) !important;
 }

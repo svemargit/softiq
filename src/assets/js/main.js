@@ -105,12 +105,24 @@
      * Toggle .header-scrolled class to #header when page is scrolled
      */
     let selectHeader = select('#header')
+    let isReality = true;
+    const elementsToSwitch = document.querySelectorAll('.header-dark');
     if (selectHeader) {
         const headerScrolled = () => {
             if (window.scrollY > 100) {
                 selectHeader.classList.add('header-scrolled')
+                if (isReality) {
+                    elementsToSwitch.forEach(element => {
+                        element.classList.remove('header-dark')
+                    });
+                }
             } else {
                 selectHeader.classList.remove('header-scrolled')
+                if (isReality) {
+                    elementsToSwitch.forEach(element => {
+                        element.classList.add('header-dark')
+                    });
+                }
             }
         }
         window.addEventListener('load', headerScrolled)
