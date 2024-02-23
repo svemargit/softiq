@@ -80,6 +80,11 @@
     transform: translateY(-10px);
 }
 
-.services .icon-box:hover h4 a {
+.services .icon-box:hover h4{
+    color: var(--tertiary-color);
+}
+
+.services .icon-box:hover h4 a{
+    text-decoration: underline;
     color: var(--tertiary-color);
 }
