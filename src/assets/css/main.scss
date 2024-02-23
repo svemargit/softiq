@@ -58,3 +58,9 @@ h6 {
 .card-background {
   background: #092635;
 }
+
+i.my-icon {
+  color: var(--tertiary-color);
+  font-size: 36px;
+  transition: 0.3s;
+}

@@ -4,6 +4,9 @@ const priceElement = document.getElementById('Price');
 const priceElementDiscount = document.getElementById('PriceDiscount');
 const monthlyPriceElementDiscount = document.getElementById('MonthlyPrice');
 
+let confirmedMonthlyPrice = 0;
+let confirmedTotalPrice = 0;
+
 window.addEventListener('DOMContentLoaded', (event) => {
     updatePrice();
 });
@@ -48,24 +51,24 @@ function updatePrice() {
 
     // Individual checkbox prices
     const checkboxPrices = {
-        option1: 3000,
-        option2: 1200,
-        option3: 1500,
-        option4: 3000,
-        option5: 7000,
-        option6: 20000,
-        option7: 1200
+        myHero: 3000,
+        myEmail: 1200,
+        myServices: 1500,
+        myListings: 3000,
+        myReviews: 7000,
+        myBlog: 20000,
+        myForm: 1200
     };
 
- // monthly licences
+    // monthly licences
     const checkboxMonthlyPrices = {
-        option1: 300,
-        option2: 0,
-        option3: 0,
-        option4: 150,
-        option5: 25,
-        option6: 500,
-        option7: 0
+        myHero: 300,
+        myEmail: 0,
+        myServices: 0,
+        myListings: 150,
+        myReviews: 25,
+        myBlog: 500,
+        myForm: 0
     };
 
 
@@ -91,4 +94,19 @@ function updatePrice() {
         priceElement.innerHTML = `<span>od</span>${(totalPrice).toLocaleString()}<sup>Kč</sup>`;
     }
     monthlyPriceElementDiscount.innerHTML = `<span>${(totalMonthlyPrice).toLocaleString()} Kč měsíčně servisní poplatek za provoz domény a serveru.</span>`;
+    confirmedMonthlyPrice=(totalMonthlyPrice).toLocaleString();
+    confirmedTotalPrice = (totalPrice).toLocaleString();
+}
+
+function fillOutForm() {
+    const checkedOptions = [];
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            checkedOptions.push(checkbox.id);
+        }
+    });
+
+    console.log("Zakaznik na zajem o "+checkedOptions)
+    console.log(`${confirmedTotalPrice} Kč faktura`)
+    console.log(`${confirmedMonthlyPrice} Kč měsíčně servisní poplatek za provoz domény a serveru.`);
 }

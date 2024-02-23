@@ -11916,4 +11916,10 @@ h6,
   background: #092635;
 }
 
+i.my-icon {
+  color: var(--tertiary-color);
+  font-size: 36px;
+  transition: 0.3s;
+}
+
 /*# sourceMappingURL=main.css.map */

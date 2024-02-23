@@ -160,8 +160,8 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 d-flex align-items-stretch mb-3" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
-                        <div class="icon toggle-on visible"><i class="bi bi-shield"></i></div>
-                        <div class="icon toggle-off"><i class="bi bi-shield-check"></i></div>
+                        <div class="icon toggle-on visible"><i class="bi bi-envelope"></i></div>
+                        <div class="icon toggle-off"><i class="bi bi-envelope-at"></i></div>
                         <h4><a href="">Profesionální email</a></h4>
                         <p>Profesionální email je nezbytným prvkem dnešního byznysu. Jedná se o emailovou adresu, která
                             je úzce spojená s vaší doménou, například jmeno@vasefirma.com. Profesionální email přidává
@@ -254,39 +254,35 @@
                     </div>
                     <div class="portfolio-info">
                         <h4>Šablona SMART</h4>
-                        <p>příkladem je css-sro.cz</p>
-                        <a class="cross-link" href="https://css-sro.cz" rel="noopener" target="_blank"
-                           title="More Details">
+                        <p>šablonu si zobrazíte na smart.reality.softiq.cz</p>
+                        <a class="cross-link" href="https://smart.reality.softiq.cz" rel="noopener" target="_blank"
+                           title="Zobrazit">
                             <i class="bi bi-arrow-up-right-circle"></i>
                         </a>
                         <a class="portfolio-lightbox preview-link" data-gallery="portfolioGallery"
                            href="./assets/img/portfolio/lahudky-reference.png"
-                           title="Příkladem šablony SMART je css-sro.cz"><i
+                           title="šablonu si zobrazíte na smart.reality.softiq.cz"><i
                                 class="bi bi-plus-circle"></i></a>
-                        <a class="details-link" href="portfolio-details.html" title="Více informací o šabloně"><i
-                                class="bi bi-info-circle"></i></a>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-img"><img alt="" class="img-fluid"
-                                                    src="./assets/img/portfolio/css-reference.png">
+                                                    src="./assets/img/portfolio/lahudky-reference.png">
                     </div>
                     <div class="portfolio-info">
-                        <h4>Realitní společnost</h4>
-                        <p>css-sro.cz</p>
-                        <a class="cross-link" href="https://css-sro.cz" rel="noopener" target="_blank"
-                           title="More Details">
+                        <h4>Šablona SILVER</h4>
+                        <p>šablonu si zobrazíte na silver.reality.softiq.cz</p>
+                        <a class="cross-link" href="https://silver.reality.softiq.cz" rel="noopener" target="_blank"
+                           title="Zobrazit">
                             <i class="bi bi-arrow-up-right-circle"></i>
                         </a>
                         <a class="portfolio-lightbox preview-link" data-gallery="portfolioGallery"
-                           href="./assets/img/portfolio/css-reference.png" title="nejaky rychly popisek todo"><i
+                           href="./assets/img/portfolio/lahudky-reference.png"
+                           title="šablonu si zobrazíte na silver.reality.softiq.cz"><i
                                 class="bi bi-plus-circle"></i></a>
-                        <!--                        <a href="portfolio-details.html" class="details-link" title="Více informací o projektu"><i-->
-                        <!--                                class="bi bi-info-circle"></i></a>-->
                     </div>
                 </div>
-
             </div>
         </div>
     </section><!-- End Portfolio Section -->
@@ -305,7 +301,7 @@
 
             <div class="row justify-content-center">
 
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="box featured">
                         <h3 id="WebLevel">Prémiový</h3>
                         <div class="row">
@@ -316,12 +312,12 @@
                             <div class="col-lg-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="SMART"
-                                           value="SMART" checked    >
+                                           value="SMART" checked>
                                     <label class="form-check-label" for="SMART">SMART</label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="SILVER"
-                                           value="SILVER">
+                                           value="SILVER" disabled>
                                     <label class="form-check-label" for="SILVER">SILVER</label>
                                 </div>
                                 <div class="form-check">
@@ -331,7 +327,7 @@
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="CASUAL"
-                                           value="CASUAL">
+                                           value="CASUAL" disabled>
                                     <label class="form-check-label" for="CASUAL">CASUAL</label>
                                 </div>
                                 <div class="form-check">
@@ -342,48 +338,54 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="form-check form-switch">
-                                    <label class="form-check-label" for="option1">Sebeprezentace</label>
-                                    <input class="form-check-input configurator-box" type="checkbox" id="option1"
+                                    <i class="bi bi-person-check my-icon"></i>
+                                    <label class="form-check-label" for="myHero">Sebeprezentace</label>
+                                    <input class="form-check-input configurator-box mt-3" type="checkbox" id="myHero"
                                            checked
                                            disabled>
                                 </div>
                                 <div class="form-check form-switch">
-                                    <label class="form-check-label" for="option2">Profesionální email</label>
-                                    <input class="form-check-input configurator-box" type="checkbox" id="option2"
-                                           >
+                                    <i class="bi bi-envelope-at my-icon"></i>
+                                    <label class="form-check-label" for="myEmail">Profesionální email</label>
+                                    <input class="form-check-input configurator-box mt-3" type="checkbox" id="myEmail"
+                                    >
                                 </div>
                                 <div class="form-check form-switch">
-                                    <label class="form-check-label" for="option3">Portfolio služeb</label>
-                                    <input class="form-check-input configurator-box" type="checkbox" id="option3"
-                                           >
+                                    <i class="bi bi-card-checklist my-icon"></i>
+                                    <label class="form-check-label" for="myServices">Portfolio služeb</label>
+                                    <input class="form-check-input configurator-box mt-3" type="checkbox" id="myServices"
+                                    >
                                 </div>
                                 <div class="form-check form-switch">
-                                    <label class="form-check-label" for="option4">Aktuální inzeráty</label>
-                                    <input class="form-check-input configurator-box" type="checkbox" id="option4"
-                                           >
+                                    <i class="bi bi-house-check my-icon"></i>
+                                    <label class="form-check-label" for="myListings">Aktuální inzeráty</label>
+                                    <input class="form-check-input configurator-box mt-3" type="checkbox" id="myListings"
+                                    >
                                 </div>
                                 <div class="form-check form-switch">
-                                    <label class="form-check-label" for="option5">Recenze</label>
-                                    <input class="form-check-input configurator-box" type="checkbox" id="option5"
-                                           >
+                                    <i class="bi bi-shield-check my-icon"></i>
+                                    <label class="form-check-label" for="myReviews">Recenze</label>
+                                    <input class="form-check-input configurator-box mt-3" type="checkbox" id="myReviews"
+                                    >
                                 </div>
                                 <div class="form-check form-switch">
-                                    <label class="form-check-label" for="option6">Blog</label>
-                                    <input class="form-check-input configurator-box" type="checkbox" id="option6"
-                                           >
+                                    <i class="bi bi-journal-check my-icon"></i>
+                                    <label class="form-check-label" for="myBlog">Blog</label>
+                                    <input class="form-check-input configurator-box mt-3" type="checkbox" id="myBlog"
+                                    >
                                 </div>
                                 <div class="form-check form-switch">
-                                    <label class="form-check-label" for="option7">Kontaktní formulář</label>
-                                    <input class="form-check-input configurator-box" type="checkbox" id="option7"
-                                           >
+                                    <i class="bi bi-envelope-check my-icon"></i>
+                                    <label class="form-check-label" for="myForm">Kontaktní formulář</label>
+                                    <input class="form-check-input form-check-input-reverse configurator-box mt-3" type="checkbox" id="myForm"
+                                    >
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <h4 id="MonthlyPrice"></h4>
-
                             <div class="d-flex justify-content-center">
-                                <a class="buy-btn" data-option="Nadstandardní" href="#contact" id="nadstandard">Odeslat
+                                <a class="buy-btn" data-option="Nadstandardní" href="#contact" id="nadstandard" onclick="fillOutForm()">Odeslat
                                     poptávku</a>
                             </div>
                         </div>
