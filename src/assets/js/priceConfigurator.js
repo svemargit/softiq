@@ -3,20 +3,26 @@ const checkboxes = document.querySelectorAll('.configurator-box');
 const priceElement = document.getElementById('Price');
 const priceElementDiscount = document.getElementById('PriceDiscount');
 const monthlyPriceElementDiscount = document.getElementById('MonthlyPrice');
+const webLevel = document.getElementById('WebLevel');
 
+let hasDiscount = false;
 let confirmedMonthlyPrice = 0;
 let confirmedTotalPrice = 0;
+let webLevelText;
 
 window.addEventListener('DOMContentLoaded', (event) => {
     updatePrice();
+    fillOutForm();
 });
 
 radioButtons.forEach(radioButton => {
     radioButton.addEventListener('change', updatePrice);
+    fillOutForm();
 });
 
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', updatePrice);
+    fillOutForm();
 });
 
 function updatePrice() {
@@ -85,8 +91,9 @@ function updatePrice() {
     });
 
     // Update the price element
-    if (totalCountOfModules > 6) {
-        let totalPriceAfterDiscount = totalPrice * 0.9;
+    hasDiscount = totalCountOfModules > 6;
+    let totalPriceAfterDiscount = totalPrice * 0.9;
+    if (hasDiscount) {
         priceElement.innerHTML = `<span>s 10% slevou od </span>${(totalPriceAfterDiscount).toLocaleString()}<sup>Kč</sup>`;
         priceElementDiscount.innerHTML = `<span>Původní cena ${(totalPrice).toLocaleString()}Kč.</span>`;
     } else {
@@ -95,18 +102,40 @@ function updatePrice() {
     }
     monthlyPriceElementDiscount.innerHTML = `<span>${(totalMonthlyPrice).toLocaleString()} Kč měsíčně servisní poplatek za provoz domény a serveru.</span>`;
     confirmedMonthlyPrice=(totalMonthlyPrice).toLocaleString();
-    confirmedTotalPrice = (totalPrice).toLocaleString();
+    confirmedTotalPrice = hasDiscount ?(totalPriceAfterDiscount).toLocaleString(): (totalPrice).toLocaleString() ;
+
+    switch (totalCountOfModules) {
+        case 1:
+        case 2:
+        case 3:
+            webLevelText = "Standardní";
+            break;
+        case 4:
+            webLevelText = "Nadstandardní";
+            break;
+        case 5:
+        case 6:
+            webLevelText = "Prémiový";
+            break;
+        case 7:
+            webLevelText = "Exkluzivní";
+            break;
+    }
+    webLevel.innerHTML=`<span>${webLevelText}</span>`;
+    fillOutForm();
 }
 
 function fillOutForm() {
+    // Access the select element by its id
+    const selectElement = document.getElementById('option');
+    selectElement.value = webLevelText;
     const checkedOptions = [];
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
             checkedOptions.push(checkbox.id);
         }
     });
-
-    console.log("Zakaznik na zajem o "+checkedOptions)
-    console.log(`${confirmedTotalPrice} Kč faktura`)
-    console.log(`${confirmedMonthlyPrice} Kč měsíčně servisní poplatek za provoz domény a serveru.`);
+    document.getElementById("orderServices").value = checkedOptions.join(', ');
+    document.getElementById("confirmedTotalPrice").value = confirmedTotalPrice + " Kč";
+    document.getElementById("confirmedMonthlyPrice").value = confirmedMonthlyPrice +" Kč měsíční výdaje";
 }
