@@ -21,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_message .= "Měsíčně: $monthly\n";
     $email_message .= "Typ webu: $option\n";
     $email_message .= "Zpráva:\n$message\n";
-
     // Email headers
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
@@ -29,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $email_message, $headers)) {
-        echo "<script>alert('Děkuji za zprávu, co nejdříve se Vám ozvu zpět.');</script>";
+        echo "<script>alert('Děkuji za zprávu, co nejdříve se Vám ozvu zpět.'); window.location.replace('https://reality.softiq.cz');</script>";
     } else {
-        echo "<script>alert('Bohužel se to nepovedlo a email se neodeslal. Napište mi na svejdam@icloud.com');</script>";
+        echo "<script>alert('Bohužel se to nepovedlo a email se neodeslal. Napište mi na svejdam@icloud.com'); window.location.replace('https://softiq.cz');</script>";
     }
 }
 ?>

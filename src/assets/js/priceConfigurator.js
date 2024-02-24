@@ -5,6 +5,10 @@ const priceElementDiscount = document.getElementById('PriceDiscount');
 const monthlyPriceElementDiscount = document.getElementById('MonthlyPrice');
 const webLevel = document.getElementById('WebLevel');
 
+const orderServicesElement = document.getElementById("orderServices");
+const confirmedTotalPriceElement = document.getElementById("confirmedTotalPrice");
+const confirmedMonthlyPriceElement =  document.getElementById("confirmedMonthlyPrice");
+
 let hasDiscount = false;
 let confirmedMonthlyPrice = 0;
 let confirmedTotalPrice = 0;
@@ -135,7 +139,14 @@ function fillOutForm() {
             checkedOptions.push(checkbox.id);
         }
     });
-    document.getElementById("orderServices").value = checkedOptions.join(', ');
-    document.getElementById("confirmedTotalPrice").value = confirmedTotalPrice + " Kč";
-    document.getElementById("confirmedMonthlyPrice").value = confirmedMonthlyPrice +" Kč měsíční výdaje";
+    orderServicesElement.value = checkedOptions.join(', ');
+    confirmedTotalPriceElement.value = confirmedTotalPrice + " Kč";
+    confirmedMonthlyPriceElement.value = confirmedMonthlyPrice +" Kč měsíční výdaje";
+}
+
+function enableFormValues() {
+    document.getElementById("option").disabled = false;
+    orderServicesElement.disabled = false;
+    confirmedTotalPriceElement.disabled = false;
+    confirmedMonthlyPriceElement.disabled = false;
 }
