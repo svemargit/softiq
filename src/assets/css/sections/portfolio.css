@@ -59,6 +59,7 @@
 .portfolio .portfolio-item .portfolio-info p {
     color: #f9fcfe;
     font-size: 14px;
+    max-width: 80%;
     margin-bottom: 0;
 }
 
