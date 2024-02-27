@@ -64,20 +64,20 @@ function updatePrice() {
         myHero: 3000,
         myEmail: 1200,
         myServices: 1500,
-        myListings: 3000,
-        myReviews: 7000,
-        myBlog: 20000,
+        myListings: 7000,
+        myReviews: 3000,
+        myBlog: 10000,
         myForm: 1200
     };
 
     // monthly licences
     const checkboxMonthlyPrices = {
-        myHero: 300,
-        myEmail: 0,
+        myHero: 440,
+        myEmail: 120,
         myServices: 0,
-        myListings: 150,
-        myReviews: 25,
-        myBlog: 500,
+        myListings: 120,
+        myReviews: 0,
+        myBlog: 120,
         myForm: 0
     };
 
